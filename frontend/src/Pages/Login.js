@@ -25,7 +25,9 @@ const Login = () => {
       var userData = { email, password }
       console.log(userData);
       // http://localhost:8000
-      const res=await axios.post('/api/v1/auth/login', userData);
+     // const res=await axios.post('/api/v1/auth/login', userData);
+      const res = await axios.post('https://ai-chatgpt-clone-14jojxpqu-chhotelals-projects.vercel.app/api/v1/auth/login', userData);
+
       if(res.data.success == false ){
         setError(res.data.error);
         return;
