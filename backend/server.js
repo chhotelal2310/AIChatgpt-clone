@@ -17,8 +17,7 @@ connectDB();
 
 //rest object
 const app=express();
-
-
+console.log("hello");
 
 //middleware
 app.use(cors());
