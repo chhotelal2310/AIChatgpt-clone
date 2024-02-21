@@ -27,8 +27,6 @@ const Login = () => {
       console.log("hii chhotelal patel ji kay ho raha hai")
       // http://localhost:8000
      const res=await axios.post('/app/api/v1/auth/login', userData);
-      //const res = await axios.post('https://ai-chatgpt-clone-14jojxpqu-chhotelals-projects.vercel.app/api/v1/auth/login', userData);
-
       if(res.data.success == false ){
         setError(res.data.error);
         return;
@@ -37,12 +35,6 @@ const Login = () => {
       toast.success("Login Successfully");
       navigate("/");
     } catch (err) {
-      // console.log(err);  // Fix: Log err instead of error
-      // if (err.response.data.error) {
-      //   setError(err.response.data.error);
-      // } else if (err.message) {
-      //   setError(err.message);
-      // }
       setError("Something went wrong");
       setTimeout(() => {
         setError("");  
@@ -54,8 +46,6 @@ const Login = () => {
   return (
     <Box
       width={isNotMobile ? "40%" : "80%"}
-      // p={"2rem"}
-      // m={"2rem auto"}
       p={"2rem"}
       mt={"8rem"}
       mb={"2rem"}
