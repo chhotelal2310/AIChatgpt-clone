@@ -26,8 +26,7 @@ const Login = () => {
       console.log(userData);
       console.log("hii chhotelal patel ji kay ho raha hai")
       // http://localhost:8000
-      
-     const res=await axios.post('https://ai-chatgpt-clone-g51r7q9tq-chhotelals-projects.vercel.app/api/v1/auth/login', userData);
+     const res=await axios.post('/app/api/v1/auth/login', userData);
       //const res = await axios.post('https://ai-chatgpt-clone-14jojxpqu-chhotelals-projects.vercel.app/api/v1/auth/login', userData);
 
       if(res.data.success == false ){
