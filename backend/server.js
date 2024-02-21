@@ -20,7 +20,10 @@ const app=express();
 console.log("hello");
 
 //middleware
-app.use(cors());
+app.use(cors({
+    origin: 'https://ai-chatgpt-clone-six.vercel.app', // or '*' to allow all origins
+  }));
+// app.use(cors());
 app.use(express.json());
 // app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.urlencoded({extended:true}));
