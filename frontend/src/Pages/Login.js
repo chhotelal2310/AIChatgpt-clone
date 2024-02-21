@@ -24,7 +24,7 @@ const Login = () => {
     try {
       var userData = { email, password }
       console.log(userData);
-      console.log("hii chhotelal patel ji kay ho raha hai")
+      console.log("hii chhotelal patel")
       // http://localhost:8000
      const res=await axios.post('/app/api/v1/auth/login', userData);
       if(res.data.success == false ){
