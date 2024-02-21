@@ -19,11 +19,6 @@ connectDB();
 const app=express();
 
 
-app.use(cors({
-    origin: ['https://ai-chatgpt-clone-g51r7q9tq-chhotelals-projects.vercel.app'], // Specify the allowed origin
-    credentials: true, // Allow cookies to be sent
-    methods: ['GET', 'POST', 'PUT', 'DELETE'] // Specify the allowed HTTP methods
-}));
 
 //middleware
 app.use(cors());
