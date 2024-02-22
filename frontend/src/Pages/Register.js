@@ -26,7 +26,7 @@ const Register = () => {
       var userData = { username, email, password }
       console.log(userData);
       // http://localhost:8000
-      const res = await axios.post('/api/v1/auth/register', userData);
+      const res = await axios.post('https://aichatgpt-clone.onrender.com/api/v1/auth/register', userData);
       console.log(res.data);
       if(res.data.success == false ){
         setError(res.data.error);
