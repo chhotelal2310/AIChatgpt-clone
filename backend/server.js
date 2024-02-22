@@ -10,7 +10,7 @@ const errorHandler = require('./middelwares/errorMiddleware');
 //routes path
 const authRoutes=require('./routes/authRoutes');
 
-const cors = require('cors');
+ 
 
 // To allow specific origins
 const corsOptions = {
