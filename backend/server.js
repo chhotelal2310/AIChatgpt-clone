@@ -14,7 +14,7 @@ const authRoutes=require('./routes/authRoutes');
 
 // To allow specific origins
 const corsOptions = {
-  origin: ['https://65d70afef8e66f7ef69716a0--luminous-cajeta-7afb6b.netlify.app/'],
+  origin: 'https://65d70afef8e66f7ef69716a0--luminous-cajeta-7afb6b.netlify.app',
 };
 
 
