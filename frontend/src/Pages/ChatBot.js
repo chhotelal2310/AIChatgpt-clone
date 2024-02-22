@@ -28,7 +28,7 @@ const ChatBot = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("/api/v1/openai/chatbot", { text });
+      const { data } = await axios.post("https://aichatgpt-clone.onrender.com/api/v1/openai/chatbot", { text });
       console.log(data);
       setResponse(data);
     } catch (err) {

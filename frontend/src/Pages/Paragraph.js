@@ -28,7 +28,7 @@ const Paragraph = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(`/api/v1/openai/paragraph`, {text});
+      const { data } = await axios.post('https://aichatgpt-clone.onrender.com/api/v1/openai/paragraph', {text});
       console.log(data);
       setPara(data);
     } catch (err) {
