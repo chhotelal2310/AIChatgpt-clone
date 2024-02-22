@@ -15,6 +15,7 @@ const authRoutes=require('./routes/authRoutes');
 // To allow specific origins
 const corsOptions = {
   origin: 'https://65d70f9a04d0dc7c2bbf1976--endearing-mermaid-007f3f.netlify.app',
+  Credential:true
 };
 
 
