@@ -12,7 +12,7 @@ const Navbar = () => {
   //handlelogout
   const handleLogout = async () => {
     try {
-      await axios.post('/api/v1/auth/logout');
+      await axios.post('https://aichatgpt-clone.onrender.com/api/v1/auth/logout');
       localStorage.removeItem("authToken");
       toast.success("Logout sucessfully");
       navigate('/login');
