@@ -14,7 +14,7 @@ const authRoutes=require('./routes/authRoutes');
 
 // To allow specific origins
 const corsOptions = {
-  origin: 'ai-chatgpt-clone-e198g2ewt-chhotelals-projects.vercel.app',
+  origin: 'https://ai-chatgpt-clone-2.vercel.app',
   //origin:'https://65d7637b50e9cd3c7cacdb49--rainbow-liger-ca4776.netlify.app',
   Credential:true
 };
