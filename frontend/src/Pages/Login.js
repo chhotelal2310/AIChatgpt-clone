@@ -26,7 +26,7 @@ const Login = () => {
       console.log(userData);
       console.log("hii chhotelal patel")
       // http://localhost:8000
-     const res=await axios.post('https://aichatgpt-clone.onrender.com/app/api/v1/auth/login', userData);
+     const res=await axios.post('https://aichatgpt-clone.onrender.com/api/v1/auth/login', userData);
       if(res.data.success == false ){
         setError(res.data.error);
         return;
