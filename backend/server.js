@@ -11,6 +11,11 @@ const errorHandler = require('./middelwares/errorMiddleware');
 const authRoutes=require('./routes/authRoutes');
 
 
+const option={
+    origin:"https://ai-chatgpt-clone-37p75dqo0-chhotelals-projects.vercel.app",
+    Credential:true,
+}
+
 //dotenv
 dotenv.config();
 connectDB();
@@ -20,7 +25,7 @@ const app=express();
 console.log("hello");
 
 //middleware
- app.use(cors());
+ app.use(cors(option));
 app.use(express.json());
 // app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.urlencoded({extended:true}));
